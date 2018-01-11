@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: microservice-test
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/v2/
+    # enable '/health' and '/info' endpoints based on Spring Boot Actuator
+    healthcheck:
+      enabled: true
