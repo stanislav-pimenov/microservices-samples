@@ -1,0 +1,12 @@
+# spring.cloud.config.discovery.enabled=true
+spring:
+   cloud:
+    config:
+      uri: http://localhost:8888
+#      server:
+#        git:
+#          repos:
+#            github-config-repo: https://git-url/service-name1-config.git
+management:
+  security:
+    enabled: false
