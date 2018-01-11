@@ -1,5 +1,7 @@
-group 'com.epam'
-version '1.0-SNAPSHOT'
+allprojects {
+    group 'com.epam'
+    version '1.0-SNAPSHOT'
+}
 
 //todo read about plugin "io.spring.dependency-management"
 buildscript {
@@ -8,46 +10,35 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        maven {
-            url 'https://repo.spring.io/libs-release'
-        }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        //classpath "io.spring.gradle:dependency-management-plugin:1.0.4.RELEASE"
-    }
-
-}
-
-apply plugin: 'java'
-apply plugin: 'io.spring.dependency-management'
-apply plugin: 'org.springframework.boot'
-
-sourceCompatibility = 1.8
-
-dependencyManagement {
-    imports {
-        mavenBom 'org.springframework.cloud:spring-cloud-netflix:1.4.0.RELEASE'
     }
 }
 
-repositories {
-    mavenCentral()
-}
 
-dependencies {
-    // compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
 
-    // include spring-boot-starter, jackson, spring-core, spring-mvc, spring-boot-starter-tomcat
-    compile 'org.springframework.boot:spring-boot-starter-web'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
 
-    // actuator needed for healthcheck
-    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    dependencyManagement {
+        imports {
+            mavenBom 'org.springframework.cloud:spring-cloud-netflix:1.4.0.RELEASE'
+        }
+    }
 
-    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+    repositories {
+        mavenCentral()
+    }
 
-    testCompile 'junit:junit'
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    dependencies {
+        // include spring-boot-starter, jackson, spring-core, spring-mvc, spring-boot-starter-tomcat
+        compile 'org.springframework.boot:spring-boot-starter-web'
+    }
 }
 
 task wrapper(type: Wrapper) {

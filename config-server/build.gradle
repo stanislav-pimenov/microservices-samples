@@ -1,0 +1,4 @@
+dependencies {
+    // config server
+    compile('org.springframework.cloud:spring-cloud-config-server')
+}

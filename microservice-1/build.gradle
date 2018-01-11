@@ -1,0 +1,13 @@
+dependencies {
+    // actuator needed for healthcheck
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // dynamic configuration
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+
+    // eureka integration
+//    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+
+    testCompile 'junit:junit'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}

@@ -1,2 +1,4 @@
 rootProject.name = 'microservice-samples'
+include 'microservice-1'
+include 'config-server'
 
