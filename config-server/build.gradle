@@ -1,4 +1,6 @@
 dependencies {
     // config server
-    compile('org.springframework.cloud:spring-cloud-config-server')
+    compile 'org.springframework.cloud:spring-cloud-config-server'
+    // eureka registration
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
 }
