@@ -1,7 +1,7 @@
 # Project templates for microservice infrastucture 
 
 
-## Eureka Service
+## Eureka Server
 
 Start Eureka server: `gradlew eureka-server:bootRun`
 
