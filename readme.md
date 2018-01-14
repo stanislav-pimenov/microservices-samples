@@ -15,7 +15,7 @@ NOTE: in windows `${user.home}` is `C:\Users\<username>`
 
 or if you have your configuration under remtoe GIT repository
 
-- `git clone <git config url>` if configuration exist under remote git repository
+- create `conf` folder and execute inside `git clone <git url>`
 - change Config server property `spring.cloud.config.server.git.uri=file://...` pointing the cloned folder
 
 #### Start Config server
