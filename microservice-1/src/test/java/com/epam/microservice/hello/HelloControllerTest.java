@@ -36,7 +36,7 @@ public class HelloControllerTest {
     @Test
     public void shouldReturnHello() throws Exception {
 
-        //when(service.returnSmth()).thenReturn("mocked hello");
+        when(service.returnSmth()).thenReturn("mocked hello");
         this.mockMvc.perform(
                 get("/hello"))
                 .andDo(print())
