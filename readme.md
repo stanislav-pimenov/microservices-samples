@@ -26,6 +26,6 @@ or if you have your configuration under remtoe GIT repository
 ## Microservice Sample
 
 Module `microservice-1` is a microservice sample that is using the centralized configuration (registered as `central-config`)
-and after startup register itself as `microservice-test`
+and after startup register itself as `microservice-1`
 
 `gradlew microservice-1:bootRun`
