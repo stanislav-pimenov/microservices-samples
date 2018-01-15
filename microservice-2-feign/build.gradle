@@ -1,0 +1,12 @@
+dependencies {
+
+    // actuator needed for healthcheck
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // eureka integration
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+
+    // add feign - rest client with client side load balancer
+    compile 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    testCompile 'junit:junit'
+}

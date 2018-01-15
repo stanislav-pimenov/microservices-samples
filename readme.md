@@ -23,9 +23,14 @@ or if you have your configuration under remtoe GIT repository
 
 **NOTE**: config server must register in Eureka as `central-config` 
 
-## Microservice Sample
+## Microservice Samples
 
-Module `microservice-1` is a microservice sample that is using the centralized configuration (registered as `central-config`)
-and after startup register itself as `microservice-test`
+1. Module `microservice-1` is a microservice sample that is using the centralized configuration (registered as `central-config`)
+and after startup register itself as `microservice-1`
 
 `gradlew microservice-1:bootRun`
+
+2. Module `microservice-2-feign` is a microservice sample that is consuming `microservice-1` with the help of [Feign](https://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#spring-cloud-feign)
+and after startup register itself as `microservice-1`
+
+`gradlew microservice-2-feign:bootRun`

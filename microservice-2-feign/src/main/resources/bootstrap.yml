@@ -8,17 +8,12 @@ eureka:
 
 spring:
   application:
-    name: microservice-1
+    name: microservice-2-feign
   cloud:
     config:
-#      uri: http://localhost:8888
       discovery:
         service-id: central-config
         enabled: true
-#      server:
-#        git:
-#          repos:
-#            github-config-repo: https://git-url/service-name1-config.git
 management:
   security:
     enabled: false
