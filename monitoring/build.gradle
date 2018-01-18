@@ -1,0 +1,16 @@
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+
+
+    // hystrix
+    compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard'
+    //compile 'org.springframework.cloud:spring-cloud-starter-turbine-stream'
+    compile 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
+
+    // config server
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+
+    // eureka integration
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+}
