@@ -5,12 +5,12 @@ dependencies {
     // hystrix
     compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
     compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard'
-    //compile 'org.springframework.cloud:spring-cloud-starter-turbine-stream'
     compile 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
+
+    // to use turbine.stream instead of single hystrix.stream
+    // turbine-stream already include eureka-client. so no need to add eureka deps
+    compile 'org.springframework.cloud:spring-cloud-starter-turbine-stream'
 
     // config server
     compile 'org.springframework.cloud:spring-cloud-starter-config'
-
-    // eureka integration
-    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
 }

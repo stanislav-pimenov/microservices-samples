@@ -3,10 +3,10 @@ package com.epam.microservice.monitoring;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
-//import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
+import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
 
 @SpringBootApplication
-//@EnableTurbineStream
+@EnableTurbineStream
 @EnableHystrixDashboard
 public class MonitoringApplication {
 
