@@ -21,4 +21,9 @@ public class HelloController {
     public String hello() {
         return businessLogicService.returnSmth();
     }
+
+    @RequestMapping(value = "/reset", method = RequestMethod.GET)
+    public void reset() {
+        businessLogicService.reset();
+    }
 }
