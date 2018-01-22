@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @RestController
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 public class HandshakeController {
 
     @Autowired
@@ -21,10 +21,11 @@ public class HandshakeController {
     @HystrixCommand
     String doSmth() {
         //return helloClient.askForHello();
-        for (int i=0; i< 30; i++) {
+        for (int i=0; i< 25; i++) {
             helloClient.askForHello();
             try {
-                TimeUnit.MILLISECONDS.sleep(5);
+                // request must follow more frequent than 1 per seconds. In this case circuit breaker will open
+                TimeUnit.MILLISECONDS.sleep(400);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
