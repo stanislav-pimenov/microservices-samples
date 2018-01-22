@@ -8,5 +8,9 @@ dependencies {
 
     // add feign - rest client with client side load balancer
     compile 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+    // hystrix
+    compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+
     testCompile 'junit:junit'
 }

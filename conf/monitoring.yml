@@ -1,0 +1,9 @@
+#spring boot's tomcat instance. registered in eureka
+server:
+  port: 8085
+
+turbine:
+  stream:
+    port: 8086
+  appConfig: microservice-1, microservice-2-feign
+  clusterNameExpression: "'default'"

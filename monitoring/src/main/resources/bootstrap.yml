@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+    # enable '/health' and '/info' endpoints based on Spring Boot Actuator
+    healthcheck:
+      enabled: true
+
+spring:
+  application:
+    name: monitoring
+  cloud:
+    config:
+      discovery:
+        service-id: central-config
+        enabled: true
+
+management:
+  security:
+    enabled: false

@@ -34,3 +34,16 @@ and after startup register itself as `microservice-1`
 and after startup register itself as `microservice-1`
 
 `gradlew microservice-2-feign:bootRun`
+
+## Hystrix dashboard
+
+Hystrix dashbord is run on tomcat port `8085` and service id `monitoring`
+```gradlew :monitoring:bootRun```
+
+To get metrics for `microservice-1` just put this url `http://localhost:8081/hystrix.stream` to the dashbord for monitoring
+Hystrix should be configured for each microsercvice that is planned to include to the dashboard
+
+To show the aggregated turbine metrics use this URL in the dashboard: `http://localhost:8086/turbine.stream`
+
+**NOTE:** at the moment turbine dashboard doesn't work. To be checked.
+
