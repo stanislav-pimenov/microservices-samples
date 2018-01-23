@@ -11,9 +11,7 @@ spring:
     name: microservice-2-feign
   cloud:
     config:
-      discovery:
-        service-id: central-config
-        enabled: true
+      uri: http://localhost:8888
 management:
   security:
     enabled: false

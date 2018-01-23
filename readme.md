@@ -31,7 +31,7 @@ and after startup register itself as `microservice-1`
 `gradlew microservice-1:bootRun`
 
 2. Module `microservice-2-feign` is a microservice sample that is consuming `microservice-1` with the help of [Feign](https://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#spring-cloud-feign)
-and after startup register itself as `microservice-1`
+and after startup register itself as `microservice-2-feign`
 
 `gradlew microservice-2-feign:bootRun`
 

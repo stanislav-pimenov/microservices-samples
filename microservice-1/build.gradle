@@ -9,7 +9,7 @@ dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-eureka'
     
     // hystrix
-    compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix'
 
     testCompile 'junit:junit'
     testCompile 'org.springframework.boot:spring-boot-starter-test'

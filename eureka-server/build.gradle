@@ -1,4 +1,6 @@
 dependencies {
-    //compile 'org.springframework.cloud:spring-cloud-starter-eureka'
-    compile 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+    // added config server
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+    // eureka server
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
 }
