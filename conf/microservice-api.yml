@@ -1,0 +1,7 @@
+server:
+  port: 8083
+
+zuul:
+  routes:
+    microservice-1: /service1/**
+    microservice-2: /service2/**

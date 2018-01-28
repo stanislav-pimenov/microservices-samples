@@ -1,4 +1,12 @@
 dependencies {
+
+    // dynamic configuration
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+
+    // eureka integration
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+
+    // added zuul dependencies
     compile 'org.springframework.cloud:spring-cloud-starter-zuul'
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+
 }
