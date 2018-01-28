@@ -11,10 +11,10 @@ spring:
     name: microservice-1
   cloud:
     config:
-#      uri: http://localhost:8888
-      discovery:
-        service-id: central-config
-        enabled: true
+      uri: http://localhost:8888
+#      discovery:
+#        service-id: central-config
+#        enabled: true
 #      server:
 #        git:
 #          repos:

@@ -6,11 +6,14 @@ dependencies {
     // eureka integration
     compile 'org.springframework.cloud:spring-cloud-starter-eureka'
 
+    // dynamic configuration
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+
     // add feign - rest client with client side load balancer
-    compile 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    compile 'org.springframework.cloud:spring-cloud-starter-feign'
 
     // hystrix
-    compile 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix'
 
     testCompile 'junit:junit'
 }

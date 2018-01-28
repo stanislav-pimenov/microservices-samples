@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-zone1
+  cloud:
+    config:
+      uri: http://localhost:8888
+#      discovery:
+#        service-id: central-config
+#        enabled: true
+management:
+  security:
+    enabled: false

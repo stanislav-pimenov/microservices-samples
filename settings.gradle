@@ -4,4 +4,5 @@ include 'eureka-server'
 include 'microservice-1'
 include 'microservice-2-feign'
 include 'monitoring'
+include 'microservice-api'
 
