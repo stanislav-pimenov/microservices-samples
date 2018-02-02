@@ -1,0 +1,10 @@
+{
+  "query" : {
+    "percolate" : {
+      "field" : "query",
+      "document" : {
+        "message" : "test and bonsai tree and some other words"
+      }
+    }
+  }
+}
