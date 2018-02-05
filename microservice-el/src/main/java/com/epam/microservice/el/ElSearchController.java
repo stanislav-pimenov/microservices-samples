@@ -13,7 +13,7 @@ public class ElSearchController {
 
     PercolateService percolateService;
 
-    public ElSearchController(@Qualifier("jest") PercolateService percolateService) {
+    public ElSearchController(@Qualifier("rTemplate") PercolateService percolateService) {
         this.percolateService = percolateService;
     }
 
