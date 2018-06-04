@@ -47,11 +47,11 @@ Api is confgured to redirect `/service1/**` calls to `microservice-1` and `servi
 
 ## Hystrix dashboard
 
-Hystrix dashbord is run on tomcat port `8085` and service id `monitoring`
+Hystrix dashbord runs on tomcat port `8085` and service id `monitoring`
 ```gradlew :monitoring:bootRun```
 
-To get metrics for `microservice-1` just put this url `http://localhost:8081/hystrix.stream` to the dashbord for monitoring
-Hystrix should be configured for each microsercvice that is planned to include to the dashboard
+To get metrics for `microservice-1` just put this url `http://localhost:8081/hystrix.stream` to the dashbord for monitoring. 
+Hystrix should be configured for each microsercvice that is planned to include to the dashboard. 
 
 To show the aggregated turbine metrics use this URL in the dashboard: `http://localhost:8086/turbine.stream`
 
